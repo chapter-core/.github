@@ -2,31 +2,17 @@
 
 組織共通の設定・テンプレートを管理するリポジトリです。
 
-## 概要
-
-本リポジトリでは、以下の組織共通設定を管理します：
-
-- Issue/PRテンプレート
-- GitHub Actionsワークフロー
-- セキュリティポリシー
-- コントリビューションガイド
-
 ## リポジトリ構成
 
 ```bash
 .github-template/
 ├── .github/
-│   ├── ISSUE_TEMPLATE/      # Issueテンプレート
-│   │   ├── config.yml      # テンプレート設定
-│   │   ├── 1-feature.yml   # 機能実装
-│   │   ├── 2-bug.yml      # バグ報告
-│   │   └── 3-document.yml # ドキュメント
-│   └── workflows/          # GitHub Actions
-├── docs/
-│   ├── CONTRIBUTING.md     # コントリビューションガイド
-│   ├── SECURITY.md        # セキュリティポリシー
-│   └── CODE_OF_CONDUCT.md # 行動規範
-└── README.md
+│   └── ISSUE_TEMPLATE/      # Issueテンプレート
+│       ├── config.yml      # テンプレート設定
+│       ├── 1-feature.yml   # 機能実装
+│       ├── 2-bug.yml      # バグ報告
+│       └── 3-document.yml # ドキュメント
+└── [README.md]
 ```
 
 ## Issue管理
