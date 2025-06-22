@@ -7,11 +7,15 @@
 ```bash
 .github-template/
 ├── .github/
-│   └── ISSUE_TEMPLATE/      # Issueテンプレート
-│       ├── config.yml      # テンプレート設定
-│       ├── 1-feature.yml   # 機能実装
-│       ├── 2-bug.yml      # バグ報告
-│       └── 3-document.yml # ドキュメント
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── config.yml      # テンプレート設定
+│   │   ├── 1-feature.yml   # 機能実装 Issue
+│   │   ├── 2-bug.yml       # バグ報告 Issue
+│   │   └── 3-document.yml  # ドキュメント Issue
+│   └── PULL_REQUEST_TEMPLATE/
+│       ├── default.md      # デフォルト PR
+│       ├── feature.md      # 機能実装 PR
+│       └── bugfix.md       # バグ修正 PR
 └── [README.md]
 ```
 
