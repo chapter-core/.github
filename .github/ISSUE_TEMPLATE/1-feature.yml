@@ -1,0 +1,60 @@
+name: 機能実装
+description: 新機能開発・機能改善のIssue
+title: "[Feature] "
+labels: ["🚀 Feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 機能実装Issue作成フォーム
+        新機能の開発や既存機能の改善に関するIssueです。
+        開発フローやコーディング規約は [core-docker](https://github.com/chapter-core/core-docker) を参照してください。
+  
+  - type: textarea
+    id: overview
+    attributes:
+      label: 機能概要
+      description: 実装する機能の概要を記載してください
+      placeholder: |
+        - 目的
+        - 仕様・要件
+        - 関連するドキュメントやIssueへのリンク
+    validations:
+      required: true
+  
+  - type: textarea
+    id: tasks
+    attributes:
+      label: タスク
+      description: 実装に必要なタスクを記載してください
+      placeholder: |
+        - [ ] 設計
+        - [ ] 実装
+        - [ ] テスト
+        - [ ] レビュー
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 完了条件
+      description: この機能が完了したと判断できる条件を記載してください
+      placeholder: |
+        - [ ] ○○の実装が完了している
+        - [ ] △△のテストが追加されている
+        - [ ] □□のドキュメントが更新されている
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足事項
+      description: その他、補足事項があれば記載してください
+      placeholder: |
+        - 技術的な制約
+        - 検討事項
+        - 参考情報
+    validations:
+      required: false
