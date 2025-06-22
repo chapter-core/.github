@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: プロジェクト開発ガイド
+    url: https://github.com/chapter-core/core-docker/tree/main/documents
+    about: 開発フローやコーディング規約はこちらを参照してください
