@@ -1,0 +1,71 @@
+name: ドキュメント
+description: ドキュメント作成・更新のIssue
+title: "[Doc] "
+labels: ["📚 Doc"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ドキュメント作成・更新Issue作成フォーム
+        設計書・仕様書・マニュアル等のドキュメントに関するIssueです。
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: ドキュメントの種類
+      description: 該当するドキュメントの種類を選択してください
+      options:
+        - 基本設計書
+        - 詳細設計書
+        - API仕様書
+        - 開発ガイドライン
+        - 運用マニュアル
+        - その他
+    validations:
+      required: true
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: 概要
+      description: ドキュメントの作成・更新内容を記載してください
+      placeholder: |
+        - 作成・更新する目的
+        - 変更箇所
+        - 関連する機能やIssue
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: タスク
+      description: 必要な作業を記載してください
+      placeholder: |
+        - [ ] ドキュメントの作成・更新
+        - [ ] レビュー依頼
+        - [ ] 修正対応
+        - [ ] 確定・公開
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: 期限
+      description: 完了期限がある場合は記載してください
+      placeholder: YYYY-MM-DD
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足事項
+      description: その他、補足事項があれば記載してください
+      placeholder: |
+        - 参考情報
+        - 関連リンク
+        - 注意事項
+    validations:
+      required: false
