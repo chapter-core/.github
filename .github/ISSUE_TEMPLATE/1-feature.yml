@@ -8,7 +8,7 @@ body:
       value: |
         ## 機能実装Issue作成フォーム
         新機能の開発や既存機能の改善に関するIssueです。
-        開発フローやコーディング規約は [core-docker](https://github.com/chapter-core/core-common) を参照してください。
+        開発フローやコーディング規約は [core-common](https://github.com/chapter-core/core-common) を参照してください。
   
   - type: textarea
     id: overview
